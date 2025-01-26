@@ -8,3 +8,16 @@ products.push("Router");
 products.pop();
 // Log the updated product list to the console
 console.log("Updated product list:", products);
+
+//Task 2: Accessing and Modifying Arrays
+
+// Declare an array scores with at least five numerical values.
+let scores = [10, 20, 30, 40, 50];
+// Update the second score in the array.
+scores[1] = 60;
+// Calculate the average of all scores.
+let total = scores.reduce((sum, score) => sum + score, 0);
+let average = total / scores.length;
+//Log the updated array and the average score to the console.
+console.log("Updated Scores:", scores);
+console.log("Average Score:", average.toFixed(2));
