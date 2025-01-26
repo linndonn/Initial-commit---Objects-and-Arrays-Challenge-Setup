@@ -36,3 +36,18 @@ Position = "Senior Analyst";
 
 // Log the updated object to the console
 console.log("Updated employee record:", employee);
+
+//Task 4: Array of Objects
+
+// Declare an array containing at least three customer objects
+let customers = [
+    { name: "Donna Adams", email: "donnaadams@gmail.com", purchaseAmount: 50 },
+    { name: "Roshade Collins", email: "roshadecollins@gmail.com", purchaseAmount: 100 },
+    { name: "Shaquille Harrigan", email: "shaquilleharrigan@gmail.com", purchaseAmount: 150 }
+];
+
+// Add a new customer object to the array
+customers.push({ name: "Jessica Cuevas", email: "jessicacuevas@gmail.com", purchaseAmount: 200 });
+
+// Log the entire customer list to the console
+console.log("Updated Customer List:", customers);
