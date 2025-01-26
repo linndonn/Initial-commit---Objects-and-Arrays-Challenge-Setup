@@ -51,3 +51,19 @@ customers.push({ name: "Jessica Cuevas", email: "jessicacuevas@gmail.com", purch
 
 // Log the entire customer list to the console
 console.log("Updated Customer List:", customers);
+
+// Task 5: Object Methods
+
+// Declare an object order with properties: orderId, customerName, and amount.
+let order = {
+    orderId: "ANU268",
+    customerName: "Donna Adams",
+    amount: 499.99,
+
+// Add a method calculateTax that returns the tax amount (assume 10% tax rate).
+    calculateTax: function() { return this.amount * 0.10;}
+};
+console.log("Tax Amount:", order.calculateTax().toFixed(2));
+
+// Log the order details and tax amount to the console.
+console.log("Order Details:", order);
