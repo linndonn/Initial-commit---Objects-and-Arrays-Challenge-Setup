@@ -25,14 +25,14 @@ console.log("Average Score:", average.toFixed(2));
 // Task 3: Working with Objects
 
 // Declare an object employee with properties: name, age, department, and isActive.
-let employee = {name: "Kimberly Joseph", age: 36, department: "Electronics", isActive: true
-};
+let employee = {name: "Kimberly Joseph", age: 36, department: "Electronics", isActive: true};
+
 // Update the department property
 update.department = "BAIS";
 console.log("Updated department:", update.department);
 
 // Add a new property 'position' to the object
-Position = "Senior Analyst";
+employee.position = "Senior Analyst";
 
 // Log the updated object to the console
 console.log("Updated employee record:", employee);
@@ -58,11 +58,14 @@ console.log("Updated Customer List:", customers);
 let order = {
     orderId: "ANU268",
     customerName: "Donna Adams",
-    amount: 499.99,
+    amount: 499.99
+};
 
 // Add a method calculateTax that returns the tax amount (assume 10% tax rate).
-    calculateTax: function() { return this.amount * 0.10;}
+order.calculateTax = function() { 
+    return this.amount * 0.10; 
 };
+
 console.log("Tax Amount:", order.calculateTax().toFixed(2));
 
 // Log the order details and tax amount to the console.
